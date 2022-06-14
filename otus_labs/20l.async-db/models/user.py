@@ -11,7 +11,7 @@ from .base import Base
 from .mixins import TimestampMixin
 
 if TYPE_CHECKING:
-    from .author import Author
+    from author import Author
 
 
 class User(TimestampMixin, Base):

@@ -14,8 +14,8 @@ from .mixins import TimestampMixin
 from .posts_tags import posts_tags_association_table
 
 if TYPE_CHECKING:
-    from .author import Author
-    from .tag import Tag
+    from author import Author
+    from posts_tags import Tag
 
 
 class Post(TimestampMixin, Base):

@@ -8,7 +8,12 @@ from sqlalchemy.engine.result import Result
 
 import config
 from models.base import Base
-from models import User, Author, Post, Tag
+from models.user import User
+from models.author import Author
+from models.post import Post
+from models.posts_tags import Tag
+
+
 
 
 log = logging.getLogger(__name__)
