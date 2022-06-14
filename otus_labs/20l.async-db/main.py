@@ -11,10 +11,7 @@ from models.base import Base
 from models.user import User
 from models.author import Author
 from models.post import Post
-from models.posts_tags import Tag
-
-
-
+from models.posts import Tag
 
 log = logging.getLogger(__name__)
 
@@ -185,7 +182,6 @@ async def main_async():
         # await create_tags(session, "news", "async", "django", "flask", "sqlalchemy")
         # await create_posts_tags_associations(session)
         await fetch_posts_with_tags_and_authors(session)
-
 
 
 def main():
